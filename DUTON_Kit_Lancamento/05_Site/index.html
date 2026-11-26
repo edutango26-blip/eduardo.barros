@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DUTON Strategy &amp; Growth | Consultoria de Estratégia e Crescimento</title>
+<meta name="description" content="Consultoria de estratégia e crescimento que conecta marketing, vendas, dados e tecnologia. Faça o Growth Score gratuito e descubra onde o crescimento da sua empresa está travando.">
+<!-- PRÉ-LANÇAMENTO: remover a linha abaixo somente na revelação pública (26/01/2027), após aprovação do fundador. -->
+<meta name="robots" content="noindex, nofollow">
+<!-- <link rel="canonical" href="https://somosduton.com.br/"> ativar após domínio e HTTPS confirmados -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="DUTON Strategy & Growth">
+<meta property="og:description" content="Seu negócio precisa de mais do que marketing. Precisa de direção.">
+<meta name="theme-color" content="#092653">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22-4%20-6%20130%20114%22%20role%3D%22img%22%20aria-label%3D%22DUTON%20s%C3%ADmbolo%22%3E%3Cpath%20d%3D%22M86.71%2C32.88%20A40.50%2C40.50%200%201%201%2065.17%2C12.45%22%20fill%3D%22none%22%20stroke%3D%22%23092653%22%20stroke-width%3D%2219%22%20stroke-linecap%3D%22butt%22/%3E%3Cpath%20d%3D%22M32.00%2C70.00%20L73.03%2C28.97%22%20stroke%3D%22%23FF681F%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M90.00%2C12.00%20L85.05%2C40.99%20L61.01%2C16.95%20Z%22%20fill%3D%22%23FF681F%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#092653; --navy-2:#0D3270; --blue:#1688D5; --blue-txt:#0F6DB0; --orange:#FF681F; --orange-txt:#C2410C;
+  --ice:#F4F7FA; --line:#D5DDE8; --ink:#1F2A3C; --muted:#5B6B82; --white:#fff;
+  --radius:16px; --max:1180px; --shadow:0 10px 30px rgba(9,38,83,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:var(--blue-txt)}
+h1,h2,h3{color:var(--navy);line-height:1.12;margin:0 0 .5em;letter-spacing:-.02em}
+h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800}
+h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0 0 1em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--navy);color:#fff;padding:10px 16px;border-radius:8px;z-index:100}
+.skip:focus{left:16px}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-txt);margin-bottom:14px}
+.kicker::before{content:"";width:28px;height:3px;background:var(--orange);border-radius:2px}
+.lead{font-size:1.15rem;color:var(--muted);max-width:720px}
+section{padding:96px 0}
+.bg-ice{background:var(--ice)}
+.bg-navy{background:var(--navy);color:#DCE6F5}
+.bg-navy h2,.bg-navy h3{color:#fff}
+.bg-navy .kicker{color:#FF8C55}
+.bg-navy .lead{color:#C9D6EA}
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit;transition:transform .15s,box-shadow .15s,background .15s}
+.btn-primary{background:var(--orange);color:var(--navy)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(255,104,31,.35)}
+.btn-ghost{background:transparent;color:var(--navy);border-color:var(--navy)}
+.btn-ghost:hover{background:var(--navy);color:#fff}
+.bg-navy .btn-ghost{color:#fff;border-color:#fff}
+.bg-navy .btn-ghost:hover{background:#fff;color:var(--navy)}
+.btn-sm{padding:10px 18px;font-size:.92rem}
+/* Header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.brand svg{height:44px;width:auto}
+.menu{display:flex;align-items:center;gap:26px;list-style:none;margin:0;padding:0}
+.menu a{color:var(--navy);text-decoration:none;font-weight:600;font-size:.95rem}
+.menu a:hover{color:var(--orange-txt)}
+.toggle{display:none;background:none;border:0;padding:8px;cursor:pointer;color:var(--navy)}
+@media (max-width:980px){
+  .toggle{display:block}
+  .menu{position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;background:#fff;border-bottom:1px solid var(--line);padding:8px 24px 20px;display:none}
+  .menu.open{display:flex}
+  .menu li{width:100%}.menu a{display:block;padding:12px 0}
+}
+/* Hero */
+.hero{padding:88px 0 72px;background:linear-gradient(180deg,#fff 0%,var(--ice) 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1 em{font-style:normal;color:var(--orange-txt)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin:30px 0 26px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
+.chips li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:.85rem;font-weight:600;color:var(--navy)}
+.hero-card{background:var(--navy);border-radius:24px;padding:32px;color:#fff;box-shadow:0 30px 60px rgba(9,38,83,.25);position:relative}
+.hero-card .tag{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:#FF8C55;font-weight:700}
+.hero-card h3{color:#fff;font-size:1.5rem;margin:8px 0 22px}
+.dim{display:grid;grid-template-columns:120px 1fr;gap:12px;align-items:center;margin-bottom:12px;font-size:.88rem;color:#C9D6EA}
+.bar{height:10px;border-radius:6px;background:rgba(255,255,255,.12);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--blue),#5DB4F0)}
+.bar.hi i{background:linear-gradient(90deg,#FF8C55,var(--orange))}
+.hero-card .foot{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.15);font-size:.85rem;color:#C9D6EA}
+.hero-card svg.sym{position:absolute;right:-28px;top:-28px;width:96px;height:96px;background:#fff;border-radius:50%;padding:14px;box-shadow:var(--shadow)}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-card svg.sym{right:12px;top:-36px;width:72px;height:72px}}
+/* Cards */
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media (max-width:980px){.grid-4{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:1fr}}
+@media (max-width:640px){.grid-4,.grid-2{grid-template-columns:1fr}section{padding:72px 0}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.bg-ice .card{border-color:transparent}
+.card .num{font-size:.8rem;font-weight:800;color:var(--blue-txt);letter-spacing:.1em}
+.card .line{width:36px;height:4px;border-radius:2px;background:var(--blue);margin-bottom:18px}
+.card.accent .line{background:var(--orange)}
+.card p{color:var(--muted);margin:0;font-size:.98rem}
+.section-head{margin-bottom:44px}
+.note{font-size:.88rem;color:var(--muted);margin-top:26px}
+/* Compare */
+.compare{display:grid;grid-template-columns:1fr 1fr;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);margin-top:40px}
+.compare div{padding:16px 22px;border-bottom:1px solid var(--line);font-size:.97rem}
+.compare .h1c{background:var(--ice);font-weight:700;color:var(--muted)}
+.compare .h2c{background:var(--navy);color:#fff;font-weight:700}
+.compare .a{color:var(--muted)} .compare .b{font-weight:600;color:var(--navy);background:#fff}
+/* Method */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;align-items:end;counter-reset:s}
+.step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:22px}
+.step:nth-child(1){min-height:220px}.step:nth-child(2){min-height:245px}.step:nth-child(3){min-height:270px}.step:nth-child(4){min-height:295px}
+.step:nth-child(5){min-height:320px;background:var(--orange);border-color:var(--orange)}
+.step:nth-child(5) h3,.step:nth-child(5) p,.step:nth-child(5) .n{color:var(--navy)}
+.step .n{font-weight:800;color:#FF8C55;font-size:.85rem}
+.step h3{margin:8px 0}.step p{font-size:.92rem;color:#C9D6EA;margin:0}
+@media (max-width:980px){.steps{grid-template-columns:1fr}.step{min-height:0!important}}
+/* Quiz */
+.quiz{background:#fff;border-radius:24px;box-shadow:var(--shadow);border:1px solid var(--line);padding:36px;max-width:880px;margin:0 auto}
+.quiz-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px;font-size:.9rem;color:var(--muted);font-weight:600}
+.progress{height:8px;background:var(--ice);border-radius:6px;overflow:hidden;margin-bottom:28px}
+.progress i{display:block;height:100%;width:10%;background:linear-gradient(90deg,var(--blue),var(--orange));transition:width .3s}
+.q fieldset{border:0;padding:0;margin:0}
+.q legend{font-size:1.25rem;font-weight:700;color:var(--navy);margin-bottom:6px;line-height:1.3}
+.q .dimtag{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-txt);margin-bottom:8px;display:block}
+.opts{display:grid;gap:10px;margin-top:18px}
+.opt{display:flex;gap:14px;align-items:flex-start;border:2px solid var(--line);border-radius:12px;padding:14px 16px;cursor:pointer;transition:border-color .15s,background .15s}
+.opt:hover{border-color:var(--blue)}
+.opt input{margin-top:4px;accent-color:var(--orange);width:18px;height:18px;flex:none}
+.opt:has(input:checked){border-color:var(--orange);background:#FFF6F1}
+.quiz-nav{display:flex;justify-content:space-between;gap:12px;margin-top:26px}
+.quiz-nav .btn[disabled]{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none}
+.result{display:none}
+.result.show{display:block}
+.score-big{display:flex;align-items:baseline;gap:10px;font-weight:800;color:var(--navy)}
+.score-big b{font-size:4rem;line-height:1}
+.band{display:inline-block;background:var(--navy);color:#fff;border-radius:999px;padding:6px 14px;font-size:.85rem;font-weight:700;margin:6px 0 18px}
+.rdim{display:grid;grid-template-columns:150px 1fr 52px;gap:14px;align-items:center;margin:10px 0;font-size:.95rem;font-weight:600;color:var(--navy)}
+.rdim .bar{background:var(--ice);height:12px}
+.rdim span:last-child{text-align:right;color:var(--muted)}
+.prio{background:var(--ice);border-left:4px solid var(--orange);border-radius:10px;padding:18px 20px;margin:22px 0}
+@media (max-width:640px){.quiz{padding:24px}.rdim{grid-template-columns:110px 1fr 44px;font-size:.86rem}}
+/* Plans */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+@media (max-width:980px){.plans{grid-template-columns:1fr}}
+.plan{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px;display:flex;flex-direction:column;box-shadow:var(--shadow);position:relative}
+.plan.feat{border:2px solid var(--blue)}
+.plan .badge{position:absolute;top:-13px;left:28px;background:var(--blue-txt);color:#fff;font-size:.75rem;font-weight:700;padding:5px 12px;border-radius:999px;letter-spacing:.04em}
+.plan .for{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange-txt)}
+.plan h3{font-size:1.5rem;margin:8px 0 6px}
+.plan .desc{color:var(--muted);font-size:.96rem}
+.price{margin:14px 0 18px;color:var(--navy)}
+.price small{display:block;font-size:.8rem;color:var(--muted);font-weight:500}
+.price b{font-size:2rem;font-weight:800}
+.plan ul{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:9px;font-size:.95rem}
+.plan li{display:flex;gap:10px}
+.plan li::before{content:"";flex:none;width:18px;height:18px;margin-top:3px;border-radius:50%;background:var(--ice) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' stroke='%23092653' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.plan .btn{margin-top:auto}
+.plan .fine{font-size:.8rem;color:var(--muted);margin-top:12px}
+.founders{margin-top:36px;background:var(--navy);border-radius:20px;padding:34px;display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:center;color:#C9D6EA}
+.founders h3{color:#fff;font-size:1.5rem}
+.founders .tag{color:#FF8C55;font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+.founders ul{margin:0;padding-left:18px}
+@media (max-width:900px){.founders{grid-template-columns:1fr}}
+/* About */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.name-graphic{background:var(--ice);border-radius:24px;padding:40px;display:grid;gap:18px}
+.name-row{display:flex;align-items:center;gap:16px;font-size:1.05rem}
+.name-row b{font-size:2rem;color:var(--navy);font-weight:800;min-width:150px}
+.name-row b span{color:var(--orange-txt)}
+.eq{border-top:2px dashed var(--line);padding-top:18px;font-weight:700;color:var(--navy)}
+@media (max-width:900px){.about{grid-template-columns:1fr}}
+/* FAQ */
+details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:0 22px;margin-bottom:12px}
+summary{cursor:pointer;padding:20px 0;font-weight:700;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--orange-txt)}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);padding-bottom:18px;margin:0}
+/* Form */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px}
+@media (max-width:900px){.contact{grid-template-columns:1fr}}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:640px){form .row{grid-template-columns:1fr}}
+#lead-form label{display:block;font-weight:600;font-size:.9rem;color:#fff;margin:0 0 6px}
+.opt span{color:var(--ink);font-weight:500}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;padding:13px 14px;border-radius:10px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.07);color:#fff;font:inherit;font-size:.98rem}
+select option{color:var(--ink)}
+input::placeholder,textarea::placeholder{color:#9FB2CE}
+.field{margin-bottom:16px}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:.86rem;color:#C9D6EA;margin:8px 0 20px}
+.consent input{margin-top:3px;width:18px;height:18px;accent-color:var(--orange);flex:none}
+.consent a{color:#FF8C55}
+.msg{margin-top:16px;padding:14px 16px;border-radius:10px;font-size:.92rem;display:none}
+.msg.show{display:block}
+.msg.ok{background:#E7F6EE;color:#0B5A33}.msg.warn{background:#FFF1EA;color:#7A2E07}.msg.err{background:#FDECEC;color:#8A1C1C}
+.err-txt{color:#FFB4A0;font-size:.82rem;margin-top:4px;display:none}
+.invalid+.err-txt{display:block}
+.contact-list{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.contact-list li{display:flex;gap:10px;align-items:center}
+/* Footer */
+footer{background:#061A3A;color:#9FB2CE;padding:48px 0 32px;font-size:.9rem}
+.foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-start}
+footer svg{height:50px;width:auto}
+footer a{color:#C9D6EA}
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#1E9E57;display:none;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.wa.on{display:flex}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#topo" aria-label="DUTON Strategy &amp; Growth — início"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 526 149" role="img" aria-label="DUTON Strategy &amp; Growth"><path d="M44.56 100.0C74.97 100.0 93.76 81.21 93.76 50.0C93.76 18.79 74.97 0.0 44.56 0.0H7.79V100.0ZM31.48 79.73V20.27H43.22C60.74 20.27 70.07 28.32 70.07 50.0C70.07 71.68 60.74 79.73 43.56 79.73Z" fill="#092653"/><path d="M155.26 101.28C180.43 101.28 197.48 86.85 197.48 64.5V0.0H173.79V62.55C173.79 73.09 166.34 80.6 155.26 80.6C144.32 80.6 136.81 73.09 136.81 62.55V0.0H113.11V64.5C113.11 86.85 129.96 101.28 155.26 101.28Z" fill="#092653"/><path d="M215.69 19.33H245.96V100.0H269.58V19.33H299.85V0.0H215.69Z" fill="#092653"/><path d="M396.99,32.88 A40.50,40.50 0 1 1 375.45,12.45" fill="none" stroke="#092653" stroke-width="19" stroke-linecap="butt"/><path d="M342.28,70.00 L383.31,28.97" stroke="#FF681F" stroke-width="14" stroke-linecap="round"/><path d="M400.28,12.00 L395.33,40.99 L371.29,16.95 Z" fill="#FF681F"/><path d="M424.07 100.0H448.36V58.59C448.36 52.28 447.69 41.41 446.89 29.53C452.46 41.48 456.15 48.99 462.05 58.59L487.62 100.0H513.73V0.0H489.44V42.55C489.44 49.53 490.17 61.01 490.85 71.01C486.62 60.13 482.46 52.55 478.03 45.17L450.11 0.0H424.07Z" fill="#092653"/><path d="M115.94 138.26C120 138.26 122.38 136.22 122.38 133.23C122.38 130.26 119.9 128.95 117.38 128.35L115.79 127.94C114.41 127.59 112.9 127.02 112.9 125.6C112.9 124.31 114.06 123.36 115.98 123.36C117.81 123.36 119.05 124.21 119.19 125.66H122.15C122.07 122.81 119.65 120.77 116.02 120.77C112.46 120.77 109.82 122.78 109.82 125.78C109.82 128.18 111.49 129.61 114.33 130.34L116.26 130.85C118.1 131.33 119.33 131.88 119.33 133.21C119.33 134.67 117.93 135.66 115.92 135.66C114 135.66 112.49 134.79 112.35 133H109.35C109.49 136.36 111.98 138.26 115.94 138.26Z" fill="#092653"/><path d="M133.91 123.57H139.16V138.0H142.2V123.57H147.44V121.0H133.91Z" fill="#092653"/><path d="M159.6 138.0H162.64V131.76H165.82L169.16 138.0H172.57L168.89 131.25C170.89 130.45 171.94 128.75 171.94 126.44C171.94 123.2 169.87 121.0 165.95 121.0H159.6ZM162.64 129.24V123.56H165.49C167.8 123.56 168.83 124.63 168.83 126.44C168.83 128.24 167.8 129.24 165.51 129.24Z" fill="#092653"/><path d="M183.2 138.0H186.53L187.92 133.79H194.28L195.73 138.0H199.07L193 121.0H189.13ZM188.73 131.34 189.45 129.17C189.92 127.65 190.43 125.75 191.04 123.37C191.67 125.72 192.2 127.61 192.7 129.17L193.45 131.34Z" fill="#092653"/><path d="M210.08 123.57H215.33V138.0H218.37V123.57H223.61V121.0H210.08Z" fill="#092653"/><path d="M235.77 138.0H246.86V135.43H238.81V130.69H246.22V128.15H238.81V123.57H246.81V121.0H235.77Z" fill="#092653"/><path d="M266.75 138.23C270.95 138.23 273.96 135.52 273.96 131.15V129.11H267.08V131.51H271.01C270.95 133.95 269.32 135.5 266.76 135.5C263.9 135.5 261.94 133.34 261.94 129.5C261.94 125.64 263.94 123.5 266.69 123.5C268.76 123.5 270.15 124.62 270.7 126.43H273.81C273.29 123.09 270.4 120.77 266.66 120.77C262.21 120.77 258.88 124.05 258.88 129.52C258.88 134.9 262.06 138.23 266.75 138.23Z" fill="#092653"/><path d="M291.55 138.0H294.6V131.42L300.8 121.0H297.27L294.29 126.36C293.84 127.17 293.47 127.9 293.09 128.87C292.71 127.93 292.34 127.2 291.87 126.36L288.84 121.0H285.28L291.55 131.42Z" fill="#092653"/><path d="M332.87 138.24C334.36 138.24 336.04 137.77 337.24 136.76L338.32 138.0H341.56L339.07 135.09C339.9 134 340.55 132.35 340.55 130.01H337.98C337.98 131.13 337.72 132.14 337.27 132.98L334.13 129.32L335.23 128.52C336.6 127.53 337.49 126.27 337.49 124.71C337.49 122.56 335.85 120.81 333.19 120.81C330.49 120.81 328.73 122.59 328.73 124.96C328.73 126.51 329.48 127.73 330.47 128.96C328.58 130.3 327.28 131.46 327.28 133.53C327.28 136.16 329.4 138.24 332.87 138.24ZM335.62 134.9C334.8 135.48 333.84 135.81 332.89 135.81C331.29 135.81 330.21 134.89 330.21 133.46C330.21 132.51 330.69 131.83 331.78 131.03L332.07 130.82ZM332.61 127.5C331.86 126.58 331.38 125.83 331.38 124.98C331.38 123.94 332.11 123.24 333.22 123.24C334.31 123.24 334.94 123.91 334.94 124.8C334.94 125.71 334.27 126.36 333.6 126.83Z" fill="#092653"/><path d="M375.68 138.23C379.88 138.23 382.89 135.52 382.89 131.15V129.11H376.01V131.51H379.93C379.88 133.95 378.25 135.5 375.69 135.5C372.83 135.5 370.86 133.34 370.86 129.5C370.86 125.64 372.87 123.5 375.62 123.5C377.69 123.5 379.08 124.62 379.63 126.43H382.74C382.22 123.09 379.33 120.77 375.59 120.77C371.14 120.77 367.81 124.05 367.81 129.52C367.81 134.9 370.99 138.23 375.68 138.23Z" fill="#092653"/><path d="M395.34 138.0H398.39V131.76H401.56L404.91 138.0H408.32L404.63 131.25C406.64 130.45 407.69 128.75 407.69 126.44C407.69 123.2 405.61 121.0 401.7 121.0H395.34ZM398.39 129.24V123.56H401.23C403.55 123.56 404.58 124.63 404.58 126.44C404.58 128.24 403.55 129.24 401.26 129.24Z" fill="#092653"/><path d="M427.37 138.23C431.82 138.23 435.16 135 435.16 129.51C435.16 124.01 431.82 120.77 427.37 120.77C422.91 120.77 419.55 124.01 419.55 129.51C419.55 134.99 422.91 138.23 427.37 138.23ZM427.37 135.5C424.58 135.5 422.61 133.38 422.61 129.51C422.61 125.62 424.58 123.5 427.37 123.5C430.13 123.5 432.09 125.61 432.09 129.51C432.09 133.39 430.13 135.5 427.37 135.5Z" fill="#092653"/><path d="M450.99 138.0H454.48L456.96 128.61C457.29 127.34 457.51 126.02 457.73 124.62C457.99 126.08 458.23 127.42 458.53 128.61L461.01 138.0H464.5L469.1 121.0H465.81L463.61 130.05C463.26 131.58 462.95 133.31 462.66 134.98C462.36 133.31 462.04 131.58 461.66 130.05L459.37 121.0H456.14L453.83 130.05C453.44 131.59 453.14 133.34 452.83 135.03C452.54 133.34 452.25 131.59 451.89 130.05L449.68 121.0H446.41Z" fill="#092653"/><path d="M480.12 123.57H485.36V138.0H488.41V123.57H493.65V121.0H480.12Z" fill="#092653"/><path d="M505.81 138.0H508.85V130.6H516.76V138.0H519.81V121.0H516.76V128.03H508.85V121.0H505.81Z" fill="#092653"/></svg></a>
+    <button class="toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="menu" id="menu">
+      <li><a href="#desafios">Desafios</a></li>
+      <li><a href="#metodo">Método</a></li>
+      <li><a href="#growth-score">Growth Score</a></li>
+      <li><a href="#solucoes">Soluções</a></li>
+      <li><a href="#sobre">A DUTON</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a class="btn btn-primary btn-sm" href="#contato" data-cta="header_sessao">Agendar Sessão de Direção</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="conteudo">
+<!-- HERO -->
+<section class="hero" id="topo">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Consultoria de estratégia e crescimento</span>
+      <h1>Seu negócio precisa de mais do que marketing. <em>Precisa de direção.</em></h1>
+      <p class="lead">A DUTON conecta estratégia, dados, tecnologia e execução para transformar o investimento em marketing em crescimento previsível — começando pelo problema do negócio, não pelo canal.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#growth-score" data-cta="hero_growth_score">Descobrir meu Growth Score <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#contato" data-cta="hero_sessao">Agendar Sessão de Direção</a>
+      </div>
+      <ul class="chips" aria-label="Diferenciais">
+        <li>Qualquer segmento</li><li>B2B e B2C</li><li>Estratégia + execução + inteligência</li>
+      </ul>
+    </div>
+    <div class="hero-card" aria-hidden="true">
+      <svg class="sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="-4 -6 130 114" role="img" aria-label="DUTON símbolo"><path d="M86.71,32.88 A40.50,40.50 0 1 1 65.17,12.45" fill="none" stroke="#092653" stroke-width="19" stroke-linecap="butt"/><path d="M32.00,70.00 L73.03,28.97" stroke="#FF681F" stroke-width="14" stroke-linecap="round"/><path d="M90.00,12.00 L85.05,40.99 L61.01,16.95 Z" fill="#FF681F"/></svg>
+      <span class="tag">DUTON Growth Score</span>
+      <h3>Onde o crescimento está travando?</h3>
+      <div class="dim">Estratégia<div class="bar"><i style="width:72%"></i></div></div>
+      <div class="dim">Aquisição<div class="bar"><i style="width:58%"></i></div></div>
+      <div class="dim">Conversão e CRM<div class="bar hi"><i style="width:34%"></i></div></div>
+      <div class="dim">Dados<div class="bar"><i style="width:46%"></i></div></div>
+      <div class="dim">Gestão<div class="bar"><i style="width:63%"></i></div></div>
+      <div class="foot">Ilustração. Faça sua autoavaliação em 5 minutos e veja as prioridades da sua empresa.</div>
+    </div>
+  </div>
+</section>
+
+<!-- DESAFIOS -->
+<section id="desafios">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Os desafios</span>
+      <h2>Marketing sem direção custa mais do que parece.</h2>
+      <p class="lead">Muitas empresas já investem em canais, ferramentas e fornecedores — mas ainda não transformam esforço em crescimento consistente.</p>
+    </div>
+    <div class="grid-4">
+      <article class="card accent"><div class="line"></div><span class="num">01</span><h3>Investimento sem clareza</h3><p>Campanhas rodam, mas falta conexão entre custo, oportunidade comercial e resultado.</p></article>
+      <article class="card"><div class="line"></div><span class="num">02</span><h3>Ações desconectadas</h3><p>Marketing, vendas, CRM e comunicação operam sem prioridades integradas.</p></article>
+      <article class="card"><div class="line"></div><span class="num">03</span><h3>Dados que não orientam</h3><p>Indicadores existem, mas não viram decisão nem novas oportunidades.</p></article>
+      <article class="card"><div class="line"></div><span class="num">04</span><h3>Crescimento sem estrutura</h3><p>O negócio evolui; processos e fornecedores não acompanham.</p></article>
+    </div>
+    <div class="compare" role="table" aria-label="Comparação entre agência tradicional e DUTON">
+      <div class="h1c" role="columnheader">Abordagem focada em canal</div><div class="h2c" role="columnheader">Abordagem DUTON</div>
+      <div class="a" role="cell">Começa pelo canal</div><div class="b" role="cell">Começa pelo problema do negócio</div>
+      <div class="a" role="cell">Mede entregas e métricas de mídia</div><div class="b" role="cell">Mede funil, conversão e resultado comercial</div>
+      <div class="a" role="cell">Executa o que foi pedido</div><div class="b" role="cell">Define prioridades e coordena quem executa</div>
+      <div class="a" role="cell" style="border-bottom:0">Relatório de atividades</div><div class="b" role="cell" style="border-bottom:0">Decisões: o que mudou, por quê, próximo passo</div>
+    </div>
+  </div>
+</section>
+
+<!-- FRENTES -->
+<section class="bg-ice" id="frentes">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">O que fazemos</span>
+      <h2>Três forças. Uma direção: crescimento.</h2>
+      <p class="lead">Estratégia para decidir, execução coordenada para avançar e inteligência para aprender a cada ciclo — combinadas conforme a maturidade de cada negócio.</p>
+    </div>
+    <div class="grid-2">
+      <article class="card"><div class="line"></div><h3>Estratégia &amp; Gestão</h3><p>Diagnóstico 360°, planejamento, posicionamento, orçamento e liderança de marketing fracionada.</p></article>
+      <article class="card accent"><div class="line"></div><h3>Growth &amp; Performance</h3><p>Direção de Google Ads, Meta Ads e demais mídias, SEO, conversão e experiência digital.</p></article>
+      <article class="card"><div class="line"></div><h3>CRM &amp; Inteligência</h3><p>Funis, qualificação de leads, cadências, automação, dashboards e integração entre marketing e vendas.</p></article>
+      <article class="card"><div class="line"></div><h3>Marca &amp; Digital</h3><p>Branding e posicionamento, conteúdo, sites e landing pages, IA aplicada ao marketing.</p></article>
+    </div>
+    <p class="note">Execução especializada por rede de parceiros homologados, sob coordenação DUTON. Produção, mídia e ferramentas são orçadas separadamente.</p>
+  </div>
+</section>
+
+<!-- METODO -->
+<section class="bg-navy" id="metodo">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Método</span>
+      <h2>DUTON Growth System</h2>
+      <p class="lead">Cinco etapas para transformar intenção em plano, plano em ação e dados em aprendizado contínuo.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><h3>Discovery</h3><p>Entender negócio, público, metas, desafios e contexto competitivo.</p></div>
+      <div class="step"><span class="n">02</span><h3>Intelligence</h3><p>Auditar canais, dados, funil, conversão, CRM e oportunidades.</p></div>
+      <div class="step"><span class="n">03</span><h3>Strategy</h3><p>Definir direção, prioridades, indicadores, responsáveis e investimentos.</p></div>
+      <div class="step"><span class="n">04</span><h3>Activation</h3><p>Coordenar execução, tecnologia, campanhas e parceiros.</p></div>
+      <div class="step"><span class="n">05</span><h3>Optimization</h3><p>Acompanhar resultados, aprender, testar e ajustar os próximos passos.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GROWTH SCORE -->
+<section class="bg-ice" id="growth-score">
+  <div class="wrap">
+    <div class="section-head" style="text-align:center">
+      <span class="kicker">Autoavaliação gratuita • 5 minutos</span>
+      <h2>Qual é o Growth Score da sua empresa?</h2>
+      <p class="lead" style="margin:0 auto">10 perguntas sobre estratégia, aquisição, conversão, dados e gestão. Ao final, você vê sua pontuação por dimensão e a prioridade número um.</p>
+    </div>
+    <div class="quiz" id="quiz">
+      <div id="quiz-body">
+        <div class="quiz-top"><span id="q-count">Pergunta 1 de 10</span><span id="q-dim"></span></div>
+        <div class="progress" aria-hidden="true"><i id="q-bar"></i></div>
+        <div class="q" id="q-box"></div>
+        <div class="quiz-nav">
+          <button class="btn btn-ghost btn-sm" id="q-prev" type="button">← Voltar</button>
+          <button class="btn btn-primary btn-sm" id="q-next" type="button" disabled>Próxima →</button>
+        </div>
+      </div>
+      <div class="result" id="result" aria-live="polite">
+        <span class="kicker">Seu resultado</span>
+        <div class="score-big"><b id="r-total">0</b><span>/ 100</span></div>
+        <span class="band" id="r-band"></span>
+        <div id="r-dims"></div>
+        <div class="prio"><strong>Prioridade número um: <span id="r-prio-dim"></span></strong><p id="r-prio-txt" style="margin:.4em 0 0"></p></div>
+        <p style="font-size:.88rem;color:var(--muted)">Autoavaliação indicativa, baseada nas suas respostas. O diagnóstico completo (DUTON Insight) valida cada dimensão com evidências.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <a class="btn btn-primary" href="#contato" id="r-cta" data-cta="score_sessao">Quero discutir meu resultado</a>
+          <button class="btn btn-ghost" type="button" id="r-restart">Refazer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUCOES -->
+<section id="solucoes">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Soluções</span>
+      <h2>Do diagnóstico à liderança de marketing.</h2>
+      <p class="lead">Escopo definido, rituais claros e valores transparentes. Comece pelo diagnóstico ou vá direto para a consultoria contínua.</p>
+    </div>
+    <div class="plans">
+      <article class="plan">
+        <span class="for">Para ganhar clareza</span>
+        <h3>DUTON Insight</h3>
+        <p class="desc">Diagnóstico 360° e plano de crescimento de 90 dias. Ideal para planejar 2027 com prioridades claras.</p>
+        <div class="price"><small>Projeto único • 2 a 3 semanas • a partir de</small><b>R$ 3.500</b></div>
+        <ul><li>Entrevistas com liderança, comercial e marketing</li><li>Auditoria de canais, mídia, mensuração, funil e CRM</li><li>Leitura de posicionamento e concorrentes</li><li>Growth Score com evidências</li><li>Roadmap de 90 dias e apresentação executiva</li></ul>
+        <a class="btn btn-ghost" href="#contato" data-plan="DUTON Insight">Solicitar diagnóstico</a>
+      </article>
+      <article class="plan feat">
+        <span class="badge">Mais indicado para evolução contínua</span>
+        <span class="for">Para crescer com inteligência</span>
+        <h3>DUTON Growth</h3>
+        <p class="desc">Consultoria estratégica recorrente: plano vivo, prioridades mensais e decisões guiadas por dados.</p>
+        <div class="price"><small>Mensal • contrato mínimo de 3 meses • a partir de</small><b>R$ 4.500<span style="font-size:1rem;font-weight:600">/mês</span></b></div>
+        <ul><li>Planejamento estratégico, metas e KPIs</li><li>Direcionamento de mídia, CRM e conversão</li><li>Dashboard e análise de indicadores</li><li>Plano mensal de otimização</li><li>Até 2 reuniões de acompanhamento por mês</li></ul>
+        <a class="btn btn-primary" href="#contato" data-plan="DUTON Growth">Conversar sobre o Growth</a>
+        <p class="fine">Referência de 10 a 14 horas de consultoria por mês.</p>
+      </article>
+      <article class="plan">
+        <span class="for">Para decisões de alto impacto</span>
+        <h3>DUTON Executive</h3>
+        <p class="desc">Liderança de marketing fracionada para empresas sem diretor de marketing ou em expansão.</p>
+        <div class="price"><small>Mensal • contrato mínimo de 3 meses • a partir de</small><b>R$ 8.000<span style="font-size:1rem;font-weight:600">/mês</span></b></div>
+        <ul><li>Head de Marketing as a Service</li><li>Plano, orçamento e prioridades</li><li>Gestão de fornecedores e parceiros</li><li>Integração entre marketing, vendas e liderança</li><li>Comitê executivo mensal e revisão trimestral</li></ul>
+        <a class="btn btn-ghost" href="#contato" data-plan="DUTON Executive">Conversar sobre o Executive</a>
+        <p class="fine">Vagas limitadas para garantir dedicação.</p>
+      </article>
+    </div>
+    <div class="founders">
+      <div>
+        <span class="tag">Condição de lançamento</span>
+        <h3>Programa Fundadores — 5 vagas</h3>
+        <p style="margin:0">Para as primeiras empresas que confiarem na DUTON: DUTON Insight por <strong style="color:#fff">R$ 2.900</strong> e crédito integral do valor na primeira mensalidade do Growth, se contratado em até 30 dias após a entrega.</p>
+      </div>
+      <ul>
+        <li>Mesmo escopo do Insight padrão</li>
+        <li>Reunião de feedback ao final</li>
+        <li>Autorização de case, se houver satisfação</li>
+        <li>Válido até 31/01/2027 ou enquanto houver vagas</li>
+      </ul>
+    </div>
+    <p class="note"><strong>Transparência:</strong> valores de referência; o escopo final é definido em proposta conforme maturidade e complexidade. Operação de mídia, produção, licenças, desenvolvimento e investimento em mídia não estão incluídos. Projetos sob medida (CRM, BI, branding, sites) mediante proposta.</p>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="bg-ice" id="sobre">
+  <div class="wrap about">
+    <div class="name-graphic" aria-label="Origem do nome DUTON">
+      <div class="name-row"><b>EDUARDO</b><span>Experiência, visão de negócios e liderança.</span></div>
+      <div class="name-row"><b>TOM</b><span>Futuro, continuidade e propósito.</span></div>
+      <div class="eq">DUTON = experiência que constrói o futuro.</div>
+    </div>
+    <div>
+      <span class="kicker">A DUTON</span>
+      <h2>Estratégia para crescer. Visão para durar.</h2>
+      <p>A DUTON nasce da união de dois nomes: Eduardo e Tom. Eduardo representa a experiência; Tom, o futuro. Juntos, traduzem o que entregamos aos clientes: experiência aplicada para construir o crescimento de amanhã.</p>
+      <p>Somos uma consultoria liderada por um profissional com trajetória sênior em marketing B2B e B2C, mídia de performance, CRM, e-commerce e inteligência de mercado, apoiada por uma rede de especialistas homologados.</p>
+      <p><strong style="color:var(--navy)">Nossos compromissos:</strong> escopo claro e por escrito, indicadores definidos desde o início, contas e dados sempre do cliente e recomendações independentes de fornecedores.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap" style="max-width:860px">
+    <div class="section-head" style="text-align:center"><span class="kicker">Perguntas frequentes</span><h2>Antes de conversarmos</h2></div>
+    <details><summary>A DUTON é uma agência?</summary><p>Não. A DUTON é uma consultoria de estratégia e crescimento. Definimos prioridades, conectamos marketing, vendas e dados e coordenamos a execução — própria, da sua equipe ou de parceiros.</p></details>
+    <details><summary>Vocês atendem o meu segmento?</summary><p>Atendemos empresas de diferentes setores e portes. O trabalho começa por diagnóstico, não por pacote pronto: o método se adapta ao contexto e à maturidade de cada negócio.</p></details>
+    <details><summary>Já tenho agência. Faz sentido contratar a DUTON?</summary><p>Sim. A DUTON não substitui a agência — dá direção a ela, conectando o trabalho de canal ao resultado comercial e definindo o que deve ser medido e cobrado.</p></details>
+    <details><summary>Vocês garantem resultado?</summary><p>Garantimos método, dedicação e transparência, com metas e indicadores definidos no início e revisados todo mês. Resultados de negócio dependem também de execução, mercado e decisões da empresa — por isso não prometemos faturamento garantido.</p></details>
+    <details><summary>O investimento em mídia está incluído?</summary><p>Não. A verba de mídia, produção, licenças e desenvolvimento são contratadas separadamente, preferencialmente em nome da sua empresa, que mantém a titularidade de contas e dados.</p></details>
+    <details><summary>O que acontece na Sessão de Direção?</summary><p>São 45 minutos para entender metas, canais, funil e dados. Você sai com três prioridades claras, mesmo que não sigamos juntos. Não há proposta automática.</p></details>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="bg-navy" id="contato">
+  <div class="wrap contact">
+    <div>
+      <span class="kicker">Contato</span>
+      <h2>Vamos conversar sobre a direção do seu crescimento?</h2>
+      <p class="lead">Agende uma Sessão de Direção: 45 minutos para olhar o seu funil — da mídia ao contrato — e sair com três prioridades claras.</p>
+      <ul class="contact-list" id="contact-list"></ul>
+    </div>
+    <form id="lead-form" novalidate>
+      <div class="row">
+        <div class="field"><label for="f-nome">Nome*</label><input id="f-nome" name="nome" type="text" autocomplete="name" required><div class="err-txt">Informe seu nome.</div></div>
+        <div class="field"><label for="f-empresa">Empresa*</label><input id="f-empresa" name="empresa" type="text" autocomplete="organization" required><div class="err-txt">Informe a empresa.</div></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="f-email">E-mail corporativo*</label><input id="f-email" name="email" type="email" autocomplete="email" required><div class="err-txt">Informe um e-mail válido.</div></div>
+        <div class="field"><label for="f-tel">Telefone / WhatsApp</label><input id="f-tel" name="telefone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000"></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="f-cargo">Cargo</label><input id="f-cargo" name="cargo" type="text" autocomplete="organization-title"></div>
+        <div class="field"><label for="f-interesse">Interesse</label>
+          <select id="f-interesse" name="interesse">
+            <option value="Sessão de Direção">Sessão de Direção</option><option>DUTON Insight</option><option>DUTON Growth</option><option>DUTON Executive</option><option>Projeto sob medida</option>
+          </select></div>
+      </div>
+      <div class="field"><label for="f-desafio">Qual o principal desafio de crescimento hoje?</label><textarea id="f-desafio" name="desafio" rows="4"></textarea></div>
+      <input type="hidden" name="growth_score" id="f-score">
+      <div class="consent"><input id="f-consent" type="checkbox" required><label for="f-consent" style="font-weight:400;color:#C9D6EA;margin:0">Concordo que a DUTON utilize estes dados para retornar meu contato sobre esta solicitação, conforme a <a href="#" id="privacy-link">Política de Privacidade</a>. Posso solicitar a exclusão a qualquer momento.*</label></div>
+      <div class="err-txt" id="consent-err">É necessário o consentimento para o envio.</div>
+      <button class="btn btn-primary" type="submit" id="f-submit">Solicitar Sessão de Direção</button>
+      <div class="msg" id="f-msg" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 526 149" role="img" aria-label="DUTON Strategy &amp; Growth"><path d="M44.56 100.0C74.97 100.0 93.76 81.21 93.76 50.0C93.76 18.79 74.97 0.0 44.56 0.0H7.79V100.0ZM31.48 79.73V20.27H43.22C60.74 20.27 70.07 28.32 70.07 50.0C70.07 71.68 60.74 79.73 43.56 79.73Z" fill="#FFFFFF"/><path d="M155.26 101.28C180.43 101.28 197.48 86.85 197.48 64.5V0.0H173.79V62.55C173.79 73.09 166.34 80.6 155.26 80.6C144.32 80.6 136.81 73.09 136.81 62.55V0.0H113.11V64.5C113.11 86.85 129.96 101.28 155.26 101.28Z" fill="#FFFFFF"/><path d="M215.69 19.33H245.96V100.0H269.58V19.33H299.85V0.0H215.69Z" fill="#FFFFFF"/><path d="M396.99,32.88 A40.50,40.50 0 1 1 375.45,12.45" fill="none" stroke="#FFFFFF" stroke-width="19" stroke-linecap="butt"/><path d="M342.28,70.00 L383.31,28.97" stroke="#FF681F" stroke-width="14" stroke-linecap="round"/><path d="M400.28,12.00 L395.33,40.99 L371.29,16.95 Z" fill="#FF681F"/><path d="M424.07 100.0H448.36V58.59C448.36 52.28 447.69 41.41 446.89 29.53C452.46 41.48 456.15 48.99 462.05 58.59L487.62 100.0H513.73V0.0H489.44V42.55C489.44 49.53 490.17 61.01 490.85 71.01C486.62 60.13 482.46 52.55 478.03 45.17L450.11 0.0H424.07Z" fill="#FFFFFF"/><path d="M115.94 138.26C120 138.26 122.38 136.22 122.38 133.23C122.38 130.26 119.9 128.95 117.38 128.35L115.79 127.94C114.41 127.59 112.9 127.02 112.9 125.6C112.9 124.31 114.06 123.36 115.98 123.36C117.81 123.36 119.05 124.21 119.19 125.66H122.15C122.07 122.81 119.65 120.77 116.02 120.77C112.46 120.77 109.82 122.78 109.82 125.78C109.82 128.18 111.49 129.61 114.33 130.34L116.26 130.85C118.1 131.33 119.33 131.88 119.33 133.21C119.33 134.67 117.93 135.66 115.92 135.66C114 135.66 112.49 134.79 112.35 133H109.35C109.49 136.36 111.98 138.26 115.94 138.26Z" fill="#FFFFFF"/><path d="M133.91 123.57H139.16V138.0H142.2V123.57H147.44V121.0H133.91Z" fill="#FFFFFF"/><path d="M159.6 138.0H162.64V131.76H165.82L169.16 138.0H172.57L168.89 131.25C170.89 130.45 171.94 128.75 171.94 126.44C171.94 123.2 169.87 121.0 165.95 121.0H159.6ZM162.64 129.24V123.56H165.49C167.8 123.56 168.83 124.63 168.83 126.44C168.83 128.24 167.8 129.24 165.51 129.24Z" fill="#FFFFFF"/><path d="M183.2 138.0H186.53L187.92 133.79H194.28L195.73 138.0H199.07L193 121.0H189.13ZM188.73 131.34 189.45 129.17C189.92 127.65 190.43 125.75 191.04 123.37C191.67 125.72 192.2 127.61 192.7 129.17L193.45 131.34Z" fill="#FFFFFF"/><path d="M210.08 123.57H215.33V138.0H218.37V123.57H223.61V121.0H210.08Z" fill="#FFFFFF"/><path d="M235.77 138.0H246.86V135.43H238.81V130.69H246.22V128.15H238.81V123.57H246.81V121.0H235.77Z" fill="#FFFFFF"/><path d="M266.75 138.23C270.95 138.23 273.96 135.52 273.96 131.15V129.11H267.08V131.51H271.01C270.95 133.95 269.32 135.5 266.76 135.5C263.9 135.5 261.94 133.34 261.94 129.5C261.94 125.64 263.94 123.5 266.69 123.5C268.76 123.5 270.15 124.62 270.7 126.43H273.81C273.29 123.09 270.4 120.77 266.66 120.77C262.21 120.77 258.88 124.05 258.88 129.52C258.88 134.9 262.06 138.23 266.75 138.23Z" fill="#FFFFFF"/><path d="M291.55 138.0H294.6V131.42L300.8 121.0H297.27L294.29 126.36C293.84 127.17 293.47 127.9 293.09 128.87C292.71 127.93 292.34 127.2 291.87 126.36L288.84 121.0H285.28L291.55 131.42Z" fill="#FFFFFF"/><path d="M332.87 138.24C334.36 138.24 336.04 137.77 337.24 136.76L338.32 138.0H341.56L339.07 135.09C339.9 134 340.55 132.35 340.55 130.01H337.98C337.98 131.13 337.72 132.14 337.27 132.98L334.13 129.32L335.23 128.52C336.6 127.53 337.49 126.27 337.49 124.71C337.49 122.56 335.85 120.81 333.19 120.81C330.49 120.81 328.73 122.59 328.73 124.96C328.73 126.51 329.48 127.73 330.47 128.96C328.58 130.3 327.28 131.46 327.28 133.53C327.28 136.16 329.4 138.24 332.87 138.24ZM335.62 134.9C334.8 135.48 333.84 135.81 332.89 135.81C331.29 135.81 330.21 134.89 330.21 133.46C330.21 132.51 330.69 131.83 331.78 131.03L332.07 130.82ZM332.61 127.5C331.86 126.58 331.38 125.83 331.38 124.98C331.38 123.94 332.11 123.24 333.22 123.24C334.31 123.24 334.94 123.91 334.94 124.8C334.94 125.71 334.27 126.36 333.6 126.83Z" fill="#FFFFFF"/><path d="M375.68 138.23C379.88 138.23 382.89 135.52 382.89 131.15V129.11H376.01V131.51H379.93C379.88 133.95 378.25 135.5 375.69 135.5C372.83 135.5 370.86 133.34 370.86 129.5C370.86 125.64 372.87 123.5 375.62 123.5C377.69 123.5 379.08 124.62 379.63 126.43H382.74C382.22 123.09 379.33 120.77 375.59 120.77C371.14 120.77 367.81 124.05 367.81 129.52C367.81 134.9 370.99 138.23 375.68 138.23Z" fill="#FFFFFF"/><path d="M395.34 138.0H398.39V131.76H401.56L404.91 138.0H408.32L404.63 131.25C406.64 130.45 407.69 128.75 407.69 126.44C407.69 123.2 405.61 121.0 401.7 121.0H395.34ZM398.39 129.24V123.56H401.23C403.55 123.56 404.58 124.63 404.58 126.44C404.58 128.24 403.55 129.24 401.26 129.24Z" fill="#FFFFFF"/><path d="M427.37 138.23C431.82 138.23 435.16 135 435.16 129.51C435.16 124.01 431.82 120.77 427.37 120.77C422.91 120.77 419.55 124.01 419.55 129.51C419.55 134.99 422.91 138.23 427.37 138.23ZM427.37 135.5C424.58 135.5 422.61 133.38 422.61 129.51C422.61 125.62 424.58 123.5 427.37 123.5C430.13 123.5 432.09 125.61 432.09 129.51C432.09 133.39 430.13 135.5 427.37 135.5Z" fill="#FFFFFF"/><path d="M450.99 138.0H454.48L456.96 128.61C457.29 127.34 457.51 126.02 457.73 124.62C457.99 126.08 458.23 127.42 458.53 128.61L461.01 138.0H464.5L469.1 121.0H465.81L463.61 130.05C463.26 131.58 462.95 133.31 462.66 134.98C462.36 133.31 462.04 131.58 461.66 130.05L459.37 121.0H456.14L453.83 130.05C453.44 131.59 453.14 133.34 452.83 135.03C452.54 133.34 452.25 131.59 451.89 130.05L449.68 121.0H446.41Z" fill="#FFFFFF"/><path d="M480.12 123.57H485.36V138.0H488.41V123.57H493.65V121.0H480.12Z" fill="#FFFFFF"/><path d="M505.81 138.0H508.85V130.6H516.76V138.0H519.81V121.0H516.76V128.03H508.85V121.0H505.81Z" fill="#FFFFFF"/></svg><p style="margin-top:14px">Estratégia para crescer. Visão para durar.</p></div>
+    <div><a href="#solucoes">Soluções</a> · <a href="#growth-score">Growth Score</a> · <a href="#contato">Contato</a> · <a href="#" class="privacy">Política de Privacidade</a></div>
+    <div>© <span id="yr"></span> DUTON Strategy &amp; Growth.</div>
+  </div>
+</footer>
+<a class="wa" id="wa" href="#" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg></a>
+
+<script>
+/* ============================================================
+   CONFIGURAÇÃO — preencher SOMENTE com dados reais e aprovados.
+   Nenhum dado é enviado enquanto formEndpoint estiver vazio.
+   - formEndpoint: URL HTTPS que aceita POST JSON (ex.: webhook do Zoho Flow/Zoho Forms, middleware próprio). Testar CORS.
+   - email: e-mail comercial (fluxo alternativo via aplicativo de e-mail).
+   - whatsapp: somente números com DDI (ex.: 55DDNNNNNNNNN).
+   - privacyUrl: endereço da Política de Privacidade publicada.
+   ============================================================ */
+const DUTON_CONFIG = Object.freeze({ formEndpoint:'', email:'', whatsapp:'', privacyUrl:'' });
+
+window.dataLayer = window.dataLayer || [];
+function track(event, params){ window.dataLayer.push(Object.assign({event}, params||{})); }
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* Menu mobile */
+const tgl=document.querySelector('.toggle'), menu=document.getElementById('menu');
+tgl.addEventListener('click',()=>{const o=menu.classList.toggle('open');tgl.setAttribute('aria-expanded',o);});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');tgl.setAttribute('aria-expanded','false');}));
+
+/* CTAs e planos */
+document.querySelectorAll('[data-cta]').forEach(el=>el.addEventListener('click',()=>track('cta_click',{cta:el.dataset.cta})));
+document.querySelectorAll('[data-plan]').forEach(el=>el.addEventListener('click',()=>{
+  document.getElementById('f-interesse').value=el.dataset.plan; track('plan_select',{plan:el.dataset.plan});
+}));
+
+/* Contatos e privacidade — exibidos somente se configurados */
+(function(){
+  const list=document.getElementById('contact-list');
+  if(DUTON_CONFIG.email){list.insertAdjacentHTML('beforeend',`<li>✉ <a style="color:#fff" href="mailto:${DUTON_CONFIG.email}">${DUTON_CONFIG.email}</a></li>`);}
+  if(DUTON_CONFIG.whatsapp){const wa=document.getElementById('wa');wa.href='https://wa.me/'+DUTON_CONFIG.whatsapp+'?text='+encodeURIComponent('Olá! Vim pelo site da DUTON e gostaria de agendar uma Sessão de Direção.');wa.classList.add('on');wa.addEventListener('click',()=>track('whatsapp_click'));}
+  document.querySelectorAll('#privacy-link,.privacy').forEach(a=>{ if(DUTON_CONFIG.privacyUrl){a.href=DUTON_CONFIG.privacyUrl;} else {a.addEventListener('click',e=>{e.preventDefault();alert('Política de Privacidade em elaboração. Publicar antes de ativar a captação de dados.');});} });
+})();
+
+/* ===================== GROWTH SCORE ===================== */
+const DIMS={E:'Estratégia',A:'Aquisição',C:'Conversão e CRM',D:'Dados',G:'Gestão'};
+const OPTS=['Não existe','Existe de forma informal','Parcialmente estruturado','Estruturado','Estruturado, medido e revisado com frequência'];
+const QS=[
+ {d:'E',t:'A empresa tem metas de crescimento claras e um plano de marketing ligado a elas?'},
+ {d:'E',t:'O público prioritário e a proposta de valor estão definidos e são usados nas decisões de comunicação?'},
+ {d:'A',t:'Os canais de aquisição (mídia paga, orgânico, indicação, prospecção) são escolhidos com base em dados de retorno?'},
+ {d:'A',t:'Campanhas e fornecedores são otimizados com rotina e critérios definidos?'},
+ {d:'C',t:'Existe um funil comercial definido, com critério combinado entre marketing e vendas para qualificar leads?'},
+ {d:'C',t:'O CRM é usado de forma consistente pelo time, com cadência de follow-up e registro de motivos de perda?'},
+ {d:'D',t:'É possível rastrear a origem dos clientes, do primeiro contato até a venda?'},
+ {d:'D',t:'Existe um painel com indicadores (CAC, conversão, ticket, ROAS) consultado nas decisões?'},
+ {d:'G',t:'Há responsáveis, rituais e orçamento definidos para marketing, com integração à área comercial?'},
+ {d:'G',t:'A empresa testa iniciativas novas e registra aprendizados de forma estruturada?'}
+];
+const REC={
+ E:'Antes de ampliar a verba, defina metas de negócio, público prioritário e 3 prioridades para os próximos 90 dias. Sem direção, cada canal otimiza um objetivo diferente.',
+ A:'Concentre investimento nos canais com retorno comprovado e crie uma rotina de otimização com critérios claros para mídia e fornecedores.',
+ C:'O maior ganho costuma estar entre o lead e a venda: combine critérios de qualificação com o comercial, defina cadências e use o CRM como fonte única do funil.',
+ D:'Garanta rastreamento da origem até a venda e um painel enxuto (CAC, conversão, ticket, ROAS). Dados confiáveis destravam todas as outras decisões.',
+ G:'Defina responsáveis, ritos mensais e orçamento por objetivo, integrando marketing e vendas em uma governança única.'
+};
+let cur=0; const ans=new Array(QS.length).fill(null); let started=false;
+const box=document.getElementById('q-box'), next=document.getElementById('q-next'), prev=document.getElementById('q-prev');
+function render(){
+  const q=QS[cur];
+  document.getElementById('q-count').textContent=`Pergunta ${cur+1} de ${QS.length}`;
+  document.getElementById('q-dim').textContent=DIMS[q.d];
+  document.getElementById('q-bar').style.width=((cur+1)/QS.length*100)+'%';
+  box.innerHTML=`<fieldset><span class="dimtag">${DIMS[q.d]}</span><legend>${q.t}</legend><div class="opts">${OPTS.map((o,i)=>`<label class="opt"><input type="radio" name="q${cur}" value="${i}" ${ans[cur]===i?'checked':''}><span>${o}</span></label>`).join('')}</div></fieldset>`;
+  box.querySelectorAll('input').forEach(inp=>inp.addEventListener('change',()=>{ans[cur]=+inp.value;next.disabled=false;if(!started){started=true;track('growth_score_start');}}));
+  next.disabled=ans[cur]===null; prev.style.visibility=cur===0?'hidden':'visible';
+  next.textContent=cur===QS.length-1?'Ver resultado →':'Próxima →';
+}
+next.addEventListener('click',()=>{ if(ans[cur]===null)return; if(cur<QS.length-1){cur++;render();box.querySelector('input').focus();} else showResult(); });
+prev.addEventListener('click',()=>{ if(cur>0){cur--;render();} });
+function showResult(){
+  const sc={}; Object.keys(DIMS).forEach(k=>sc[k]=0);
+  QS.forEach((q,i)=>sc[q.d]+=ans[i]*2.5);
+  const total=Math.round(Object.values(sc).reduce((a,b)=>a+b,0));
+  const band= total>=80?'Avançado':total>=60?'Estruturado':total>=40?'Em estruturação':'Inicial';
+  const low=Object.keys(sc).sort((a,b)=>sc[a]-sc[b])[0];
+  document.getElementById('r-total').textContent=total;
+  document.getElementById('r-band').textContent='Maturidade: '+band;
+  document.getElementById('r-dims').innerHTML=Object.keys(DIMS).map(k=>`<div class="rdim"><span>${DIMS[k]}</span><div class="bar ${k===low?'hi':''}"><i style="width:${sc[k]/20*100}%"></i></div><span>${sc[k].toLocaleString("pt-BR")}/20</span></div>`).join('');
+  document.getElementById('r-prio-dim').textContent=DIMS[low];
+  document.getElementById('r-prio-txt').textContent=REC[low];
+  document.getElementById('quiz-body').style.display='none';
+  const r=document.getElementById('result'); r.classList.add('show'); r.setAttribute('tabindex','-1'); r.focus();
+  const summary=`Growth Score ${total}/100 (${band}) — `+Object.keys(DIMS).map(k=>`${DIMS[k]} ${sc[k].toLocaleString("pt-BR")}`).join(', ');
+  document.getElementById('f-score').value=summary;
+  const d=document.getElementById('f-desafio'); if(!d.value) d.value=`Fiz o Growth Score (${total}/100). Prioridade indicada: ${DIMS[low]}.`;
+  track('growth_score_complete',{score:total,band:band,priority:DIMS[low]});
+}
+document.getElementById('r-restart').addEventListener('click',()=>{ans.fill(null);cur=0;document.getElementById('result').classList.remove('show');document.getElementById('quiz-body').style.display='block';render();});
+render();
+
+/* ===================== FORMULÁRIO ===================== */
+const form=document.getElementById('lead-form'), msg=document.getElementById('f-msg');
+let formStarted=false;
+form.addEventListener('input',()=>{ if(!formStarted){formStarted=true;track('form_start');} });
+function show(type,html){msg.className='msg show '+type;msg.innerHTML=html;}
+form.addEventListener('submit',async e=>{
+  e.preventDefault();
+  let ok=true;
+  ['f-nome','f-empresa','f-email'].forEach(id=>{const el=document.getElementById(id);const bad=!el.value.trim()||(el.type==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value));el.classList.toggle('invalid',bad);el.setAttribute('aria-invalid',bad);if(bad)ok=false;});
+  const c=document.getElementById('f-consent'); document.getElementById('consent-err').style.display=c.checked?'none':'block'; if(!c.checked)ok=false;
+  if(!ok){show('err','Revise os campos destacados.');return;}
+  const data=Object.fromEntries(new FormData(form).entries());
+  data.consentimento=true; data.origem='LP DUTON'; data.data_envio=new Date().toISOString();
+  if(DUTON_CONFIG.formEndpoint){
+    const btn=document.getElementById('f-submit'); btn.disabled=true; btn.textContent='Enviando…';
+    try{
+      const r=await fetch(DUTON_CONFIG.formEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+      if(!r.ok) throw new Error(r.status);
+      show('ok','Recebemos sua solicitação. Retornaremos em até 1 dia útil para agendar a Sessão de Direção.'); form.reset();
+      track('form_submit_success',{interesse:data.interesse});
+    }catch(err){ show('err','Não foi possível enviar agora. Tente novamente em instantes'+(DUTON_CONFIG.email?` ou escreva para <a href="mailto:${DUTON_CONFIG.email}">${DUTON_CONFIG.email}</a>.`:'.')); track('form_submit_error'); }
+    finally{ btn.disabled=false; btn.textContent='Solicitar Sessão de Direção'; }
+  } else if(DUTON_CONFIG.email){
+    const body=Object.entries(data).map(([k,v])=>`${k}: ${v}`).join('\n');
+    window.location.href=`mailto:${DUTON_CONFIG.email}?subject=${encodeURIComponent('Sessão de Direção — '+data.empresa)}&body=${encodeURIComponent(body)}`;
+    show('warn','Abrimos seu aplicativo de e-mail com a mensagem pronta. Confirme o envio por lá.');
+    track('form_mailto_open');
+  } else {
+    show('warn','<strong>Versão de demonstração:</strong> nenhum dado foi enviado. O canal de captação ainda não está configurado.');
+    track('form_demo_submit');
+  }
+});
+</script>
+</body>
+</html>
